@@ -1,0 +1,58 @@
+@use '@/styles/scss/abstracts/' as *;
+
+.footerbottom {
+  background: DimGray;
+  color: darkred;
+  text-align: center;
+  font-size:12px;
+ 
+
+  .container {
+    padding: 0 2px;
+  }
+
+  .footerContent {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .navLinks {
+    nav {
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        margin-bottom: 0; 
+        margin-left: 50px;
+
+        li {
+          margin-right: 20px;
+          &:hover {
+            color: White;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+
+  .socialLinks {
+    display: flex;
+    justify-content: flex-end;
+    
+
+    a {
+      margin-left: 20px;
+       &:last-child {
+        margin-right: 20px;
+       }
+       &:hover {
+        color: blue;
+        cursor: pointer; 
+       }
+    }
+  }
+}
